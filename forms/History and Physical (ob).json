@@ -1,0 +1,289 @@
+{
+  "name": "History and Physical (ob)",
+  "pages": [
+    {
+      "label": "Obstetrical Record",
+      "sections": [
+        {
+          "label": "Obstetrical Record",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "162571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "nameOfPatient",
+              "label": "Name of Patient",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "1",
+                "max": "120"
+              },
+              "id": "age",
+              "label": "Age",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160531AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "chiefComplaint",
+              "label": "Chief Complaint",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "163770AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "historyOfPresentIllness",
+              "label": "History of Present Illness",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "",
+                "maxLength": "",
+                "concept": "160597AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "mentrualHistory",
+              "label": "Mentrual History"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "pastMedicalHistory",
+              "label": "Past Medical History",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160076AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obHistory",
+              "label": "OB History",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159614AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "reviewOfSystems",
+              "label": "Review of Systems",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Physical Exam",
+      "sections": [
+        {
+          "label": "Physical Exam",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Vital Signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "40",
+                "max": "200"
+              },
+              "id": "systolicBp(Mmhg)",
+              "label": "Systolic BP (mmHg)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "30",
+                "max": "200"
+              },
+              "id": "diastolicBp(Mmhg)",
+              "label": "Diastolic BP (mmHg)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "30",
+                "max": "200"
+              },
+              "id": "heartRate(Pulse)",
+              "label": "Heart Rate (Pulse)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "50"
+              },
+              "id": "temperature",
+              "label": "Temperature (C)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "200"
+              },
+              "id": "weight(Kg)",
+              "label": "Weight (kg)",
+              "required": true
+            }
+          ]
+        },
+        {
+          "label": "Physical Exam",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "3ca389b4-6b9d-487c-bdd9-73d2cfeeab0c"
+              },
+              "id": "generalState",
+              "label": "General State",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "1809AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "head",
+              "label": "Head",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "abdomen:FundalHeight",
+              "label": "Abdomen: Fundal Height",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "presentation",
+              "label": "Presentation",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1440AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "50",
+                "max": "300"
+              },
+              "id": "fetalHeartRate",
+              "label": "Fetal Heart Rate",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "167242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "uterineContractionsOnAdmission",
+              "label": "Uterine Contractions on Admission",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "166832AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "internalExam",
+              "label": "Internal Exam",
+              "required": true
+            }
+          ]
+        },
+        {
+          "label": "Impression/Diagnosis",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "13f82aece2cd4e3bbb950140e6cbffce"
+              },
+              "id": "assessmentAndPlan",
+              "label": "Assessment and Plan",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "164256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "attendingMd/Rn/Rm",
+              "label": "Attending MD/RN/RM",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "referencedForms": [],
+  "uuid": "596224f6-60f2-4e95-aa85-e595059d53d2",
+  "description": "Obstetrical H&P/Obstetrical Record",
+  "version": "0.9"
+}

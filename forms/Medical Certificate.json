@@ -1,0 +1,102 @@
+{
+  "name": "Medical Certificate",
+  "pages": [
+    {
+      "label": "Medical Certificate",
+      "sections": [
+        {
+          "label": "Medical Certificate",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "CIEL:166848"
+              },
+              "id": "date",
+              "label": "Date",
+              "required": true,
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166102",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "patientFirstName",
+              "label": "Patient first name",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166103",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "patientLastName",
+              "label": "Patient last name",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "1",
+                "maxLength": "200",
+                "concept": "CIEL:167131"
+              },
+              "id": "locationOfResidence",
+              "label": "Location of residence",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "1",
+                "maxLength": "200",
+                "concept": "CIEL:160632"
+              },
+              "id": "datesOfHospitalVisitAdmission",
+              "label": "Dates of Hospital Visit/Admission",
+              "required": true,
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:161602"
+              },
+              "id": "finalDiagnosis",
+              "label": "Final Diagnosis",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "2ad20b043cf54dd48e698e1c8e231c99"
+              },
+              "id": "remarksRecommendations",
+              "label": "Remarks and Recommendations",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "181820aa-88c9-479b-9077-af92f5364329",
+  "referencedForms": [],
+  "uuid": "171507db-5833-47a5-9ac2-619d3aeeecaf",
+  "description": "Medical Certificate Form",
+  "version": "1.0"
+}

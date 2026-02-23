@@ -1,0 +1,73 @@
+{
+  "name": "Outside Facility - Imaging Study",
+  "processor": "EncounterFormProcessor",
+  "encounterType": "52d8be58-5737-48de-97a0-032db7d14de7",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Encounter Details",
+      "alias": "Reusable Block - Encounter Details"
+    },
+    {
+      "formName": "Reusable Block - Imaging Study",
+      "alias": "Reusable Block - Imaging Study"
+    }
+  ],
+  "uuid": "91df2c22-631a-44f3-bc0a-93caf456cff9",
+  "description": ".",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "Imaging",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Encounter Details",
+            "page": "Encounter Details",
+            "section": "Encounter Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "US Study Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Imaging Study",
+            "page": "Ultrasound Study",
+            "section": "US Study Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "XR Study Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Imaging Study",
+            "page": "X-ray Study",
+            "section": "XR Study Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Study Report",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "scannedReport",
+              "label": "Scanned report"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

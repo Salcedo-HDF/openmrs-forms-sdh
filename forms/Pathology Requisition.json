@@ -1,0 +1,112 @@
+{
+  "name": "Pathology Requisition",
+  "pages": [
+    {
+      "label": "Pathology Requisition",
+      "sections": [
+        {
+          "label": "Patient Info",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Patient Info",
+            "page": "Patient Info",
+            "section": "Patient Info",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Encounter Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "id": "dateOfRequisition",
+              "label": "Date of Requisition"
+            }
+          ]
+        },
+        {
+          "label": "Clinical Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:1390"
+              },
+              "id": "clinicalHistory",
+              "label": "Clinical History"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "27fe6714-0bc6-4435-adb0-818538abe42c"
+              },
+              "id": "prodedurePerformed",
+              "label": "Prodedure performed"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "08f1f638-b3c7-4040-8ae9-c95a5df59755"
+              },
+              "id": "specimen",
+              "label": "Specimen(s)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:159395"
+              },
+              "id": "impression",
+              "label": "Impression"
+            }
+          ]
+        },
+        {
+          "label": "Requisition Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:1473"
+              },
+              "id": "requestingPhysician",
+              "label": "Requesting Physician"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "pathologyServicesRequested",
+              "label": "Pathology service(s) requested",
+              "value": "[ ] Histopathology\n\n[ ] Cytology\n\n[ ] FNAB"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "f78bd092-baaa-4e52-a2e2-4cf733079595",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Patient Info",
+      "alias": "Reusable Block - Patient Info"
+    }
+  ],
+  "uuid": "07d85adf-00aa-4583-9819-a6f04309e144",
+  "description": ".",
+  "version": "1.0"
+}

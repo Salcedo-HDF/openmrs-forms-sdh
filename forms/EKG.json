@@ -1,0 +1,89 @@
+{
+  "encounterType": "f086c0ac-7c41-4e44-bbc1-f52fe780bdc1",
+  "name": "EKG",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Encounter Details",
+      "alias": "Reusable Block - Encounter Details"
+    }
+  ],
+  "uuid": "e52b7681-d1c3-4930-ace9-47c5c6f3ba41",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "EKG",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Encounter Details",
+            "page": "Encounter Details",
+            "section": "Encounter Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "EKG",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:160845"
+              },
+              "id": "ekgFindingsComments",
+              "label": "EKG findings / comments",
+              "datePickerFormat": "both",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "159565AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1116AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Abnormal"
+                  },
+                  {
+                    "concept": "148203AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Atrial fibrillation"
+                  },
+                  {
+                    "concept": "135971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Left ventricular hypertrophy"
+                  },
+                  {
+                    "concept": "115432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Myocardial infarction"
+                  },
+                  {
+                    "concept": "1115AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal"
+                  }
+                ]
+              },
+              "id": "ekgDiagnosis",
+              "label": "EKG diagnosis"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "ekgUpload",
+              "label": "EKG upload"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "."
+}

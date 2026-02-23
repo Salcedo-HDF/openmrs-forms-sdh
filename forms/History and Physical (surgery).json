@@ -1,0 +1,301 @@
+{
+  "name": "History and Physical (surgery)",
+  "pages": [
+    {
+      "label": "History and Background",
+      "sections": [
+        {
+          "label": "Chief Complaint",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160531AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "chiefComplaint",
+              "label": "Chief Complaint",
+              "required": true
+            }
+          ]
+        },
+        {
+          "label": "History of Present Illness (HPI)",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1390AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "historyOfPresentIllness",
+              "label": "History of Present Illness",
+              "required": true
+            }
+          ]
+        },
+        {
+          "label": "History",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "pastMedicalHistory",
+              "label": "Past Medical History",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160714AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "pastSurgicalHistory",
+              "label": "Past Surgical History",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160593AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "familyHistory",
+              "label": "Family History"
+            }
+          ]
+        },
+        {
+          "label": "Obstetrical/Gynecologic History",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "161009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obstetricalHistory",
+              "label": "Obstetrical History",
+              "value": "",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "lmp",
+              "label": "LMP",
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "5596AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "edc",
+              "label": "EDC",
+              "datePickerFormat": "calendar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Physical Exam and A&P",
+      "sections": [
+        {
+          "label": "Vital Signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "30",
+                "max": "43"
+              },
+              "id": "bodyTemperature",
+              "label": "Body Temperature",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "max": "300"
+              },
+              "id": "systolicBp(Mmhg)",
+              "label": "Systolic BP (mmHg)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "max": "200"
+              },
+              "id": "diastolicBp(Mmhg)",
+              "label": "Diastolic BP (mmHg)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "40",
+                "max": "200"
+              },
+              "id": "heartRate(Pulse)",
+              "label": "Heart Rate (Pulse)",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "min": "5",
+                "max": "40",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "respiratoryRate",
+              "label": "Respiratory Rate",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "50",
+                "max": "100"
+              },
+              "id": "oxygenSaturation(Spo2)",
+              "label": "Oxygen Saturation (SpO2)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "weight",
+              "label": "Weight"
+            }
+          ]
+        },
+        {
+          "label": "Physical Exam",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "167092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "generalState",
+              "label": "General State",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "1122AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "heent",
+              "label": "HEENT",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "1124AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "cardiovascular",
+              "label": "Cardiovascular",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "1123AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "pulmonary",
+              "label": "Pulmonary",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1125AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "abdomen",
+              "label": "Abdomen",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "166362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "gynExam",
+              "label": "GYN Exam",
+              "required": false
+            }
+          ]
+        },
+        {
+          "label": "Assessment & Plan",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "13f82aece2cd4e3bbb950140e6cbffce"
+              },
+              "id": "assessmentAndPlan",
+              "label": "Assessment and Plan",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "referencedForms": [],
+  "uuid": "feb3c88a-c63d-463a-97b3-db6858e7728a",
+  "description": "Complete H&P for surgical admissions",
+  "version": "0.9"
+}

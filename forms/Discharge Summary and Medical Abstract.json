@@ -1,0 +1,160 @@
+{
+  "encounterType": "181820aa-88c9-479b-9077-af92f5364329",
+  "name": "Discharge Summary and Medical Abstract",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "uuid": "dc8994ad-c076-4b58-b7e0-3c1552c74741",
+  "version": "0.9",
+  "pages": [
+    {
+      "label": "Discharge Summary / Medical Abstract",
+      "sections": [
+        {
+          "label": "Discharge Summary / Medical Abstract",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "dischargeSummaryAbstractDateOfAdmission",
+              "label": "Date of Admission",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "dischargeSummaryAbstractDateOfDischarge",
+              "label": "Date of Discharge",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargesummaryabstractattendingphysician",
+              "label": "Attending Physician"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargeSummaryAbstractPCP",
+              "label": "PCP"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractChiefComplaints",
+              "label": "Chief Complaints"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractPresentIllness",
+              "label": "History of Present Illness with PE:"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractCourseInTheWard",
+              "label": "Course in the Ward"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractLabResults",
+              "label": "Laboratory Results"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractMedications",
+              "label": "Medications"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractFinalDiagnosis",
+              "label": "Final Diagnosis"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractMedicalAdvice",
+              "label": "Medical Advice"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "dischargeSummaryAbstractNamesOfPhysiciansLicenses",
+              "label": "Name of Physicians and License numbers"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargeSummaryAbstractSigPhysician1",
+              "label": "Signature of Physician 1 (type name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargeSummaryAbstractSigPhysician2",
+              "label": "Signature of Physician 2 (type name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargeSummaryAbstractSigPhysician3",
+              "label": "Signature of Physician 3 (type name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargeSummaryAbstractPTR",
+              "label": "PTR"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Patient discharge summary and medical abstract form"
+}

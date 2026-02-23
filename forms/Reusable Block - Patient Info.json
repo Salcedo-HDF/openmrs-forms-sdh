@@ -1,0 +1,99 @@
+{
+  "encounterType": "0c5418f9-e4d1-4e1f-a0f5-775ff9d6396f",
+  "name": "Reusable Block - Patient Info",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "uuid": "b1fa7e76-2ca8-454c-b64c-cb6b598207a5",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "Patient Info",
+      "sections": [
+        {
+          "label": "Patient Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "calculate": {
+                  "calculateExpression": "patient.name[0].given.join(' ') + ' ' + patient.name[0].family"
+                }
+              },
+              "id": "patientName",
+              "label": "Patient Name",
+              "readonly": true
+            },
+            {
+              "type": "patientIdentifier",
+              "questionOptions": {
+                "rendering": "text",
+                "identifierType": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+              },
+              "id": "sdhMrn",
+              "label": "SDH MRN",
+              "readonly": true
+            },
+            {
+              "type": "patientIdentifier",
+              "questionOptions": {
+                "rendering": "text",
+                "identifierType": "4c9e943a-e795-11ef-8671-b2f86dcd4df4"
+              },
+              "id": "legacySdhMrn",
+              "label": "Legacy SDH MRN",
+              "readonly": true
+            },
+            {
+              "type": "patientIdentifier",
+              "questionOptions": {
+                "rendering": "text",
+                "identifierType": "3f5bce62-7a54-4f5b-9fa7-6140fdaf0502"
+              },
+              "id": "philhealthId",
+              "label": "PhilHealth ID",
+              "readonly": true
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "calculate": {
+                  "calculateExpression": "formatDate(patient.birthDate, 'MM/DD/YYYY')"
+                }
+              },
+              "id": "dateOfBirth",
+              "label": "Date of Birth",
+              "readonly": true
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "calculate": {
+                  "calculateExpression": "patient.age"
+                }
+              },
+              "id": "age",
+              "label": "Age"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "calculate": {
+                  "calculateExpression": "patient.gender"
+                }
+              },
+              "id": "gender",
+              "label": "Gender",
+              "readonly": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "."
+}

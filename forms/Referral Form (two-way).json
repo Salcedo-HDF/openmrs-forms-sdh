@@ -1,0 +1,984 @@
+{
+  "encounterType": "181820aa-88c9-479b-9077-af92f5364329",
+  "name": "Referral Form (two-way)",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "uuid": "de45494f-9427-4f1f-86dd-1695cc6176da",
+  "version": "0.9",
+  "pages": [
+    {
+      "label": "Referral Info",
+      "sections": [
+        {
+          "label": "Referral Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "Referral Info",
+              "value": "**Referral Info**"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1885AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1882AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Emergency (status)"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "1905AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Emergency-Ambulance Required (Status)"
+                  },
+                  {
+                    "concept": "1883AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urgent (status)"
+                  },
+                  {
+                    "concept": "1884AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "When Convenient (status)"
+                  }
+                ]
+              },
+              "id": "2wayReferralType",
+              "label": "Type of Referral"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "dc3492ef-24a5-4fd9-b58d-4fd2acf7071f"
+              },
+              "id": "referralReason",
+              "label": "Reason for Referral"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralTo",
+              "label": "Referred To:"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "referralDateTime",
+              "label": "Referral Date/Time:",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "159356AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1919AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Exempted from Insurance"
+                  },
+                  {
+                    "concept": "1917AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "National Health Insurance Fund Member"
+                  },
+                  {
+                    "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "None"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              },
+              "id": "referralTypeOfHealthInsurance",
+              "label": "Type of Health Insurance"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralInsuranceName",
+              "label": "Insurance Name (PhilHealth, Charity, etc.)"
+            }
+          ]
+        },
+        {
+          "label": "Patient Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralPatientInfo",
+              "value": "**Patient Info**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralPatientName",
+              "label": "Name of Patient"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralAge",
+              "label": "Age"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6b5ee9a1-4d71-45f6-bb74-6c489bda25df",
+                "answers": [
+                  {
+                    "concept": "e7d6eaaf-2c3d-431b-92d6-65c47d3cf748",
+                    "label": "Female to male transsexual"
+                  },
+                  {
+                    "concept": "236a96a3-6d88-4c5d-a963-a5634fcd8d12",
+                    "label": "Identifies as female gender"
+                  },
+                  {
+                    "concept": "7193a29c-7fd7-4d71-baaf-4758f8135bed",
+                    "label": "Identifies as male gender"
+                  },
+                  {
+                    "concept": "90d14d59-e008-42c6-a671-074daf88ec7c",
+                    "label": "Identifies as non-binary gender"
+                  },
+                  {
+                    "concept": "af8256a1-464a-4695-8556-14f87dab8781",
+                    "label": "Male to female transsexual"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              },
+              "id": "referralSex",
+              "label": "Sex"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "1054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1058AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Divorced"
+                  },
+                  {
+                    "concept": "5555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Married"
+                  },
+                  {
+                    "concept": "1057AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Never married"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "1056AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Separated"
+                  },
+                  {
+                    "concept": "1059AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Widowed"
+                  },
+                  {
+                    "concept": "135704AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Lives alone"
+                  },
+                  {
+                    "concept": "1060AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Living with partner"
+                  }
+                ]
+              },
+              "id": "referralCivilStatus",
+              "label": "Civil Status"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralOccupation",
+              "label": "Occupation"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162929AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "162931AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Catholic"
+                  },
+                  {
+                    "concept": "163125AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Christianity (non-Catholic)"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "referralReligion",
+              "label": "Religion"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralResponsiblePerson",
+              "label": "Responsible Person"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "160640AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "973AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Grandparent"
+                  },
+                  {
+                    "concept": "160639AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Guardian"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "1527AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Parent"
+                  },
+                  {
+                    "concept": "5617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Partner or spouse"
+                  },
+                  {
+                    "concept": "972AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Sibling"
+                  }
+                ]
+              },
+              "id": "referralResponsiblePersonRelationship",
+              "label": "Relationship to Patient"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralResponsiblePersonContact",
+              "label": "Contact Number"
+            }
+          ]
+        },
+        {
+          "label": "Vital Signs and Biometrics",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralVitalSignsandBiometrics",
+              "value": "**Vital Signs and Biometrics**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralAdmittingImpression",
+              "label": "admitting Impression"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralSystolicBP",
+              "label": "Systolic Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralDiastolicBloodPressure",
+              "label": "Diastolic Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralHeartRate",
+              "label": "Heart Rate (Pulse)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralTemperatureC",
+              "label": "Temperature (C)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralHeight",
+              "label": "Height (cm)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralWeightKg",
+              "label": "Weight (kg)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralBloodType",
+              "label": "Blood Type (A, A+, A-, B, etc.)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "152952AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralAllergies",
+              "label": "Allergies"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralOtherVitals",
+              "label": "Other Vitals/Biometrics Data"
+            }
+          ]
+        },
+        {
+          "label": "Abstract / Diagnostics",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralAbstractandDiagnosis",
+              "label": "Abstract and Diagnosis",
+              "value": "**Abstract and Diagnosis**"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralAbstractHistory",
+              "label": "Abstract / History"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralDiagnosticProcedure",
+              "label": "Diagnostic Procedure Done / Treatment Given (pls. specify the date, dose, time last given)"
+            }
+          ]
+        },
+        {
+          "label": "Signatures",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralPrintedName",
+              "label": "Printed Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralDesignation",
+              "label": "Designation"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralContactInfo",
+              "label": "Contact Info"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralSignature",
+              "label": "Referral Signature (type name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "Referring Hospital",
+              "value": "Referring Hospital: **SALCEDO DOCTORS HOSPITAL INC.**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralHospitalAddress",
+              "label": "Address",
+              "value": "Address: **Salcedo, Eastern Samar**"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Return Slip",
+      "sections": [
+        {
+          "label": "Return Slip",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralLabelReturnSlip",
+              "value": "**RETURN SLIP / DISCHARGE SLIP** (for pick –up by the hospital’s designated person)"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "referralReturnSlipDateTime",
+              "label": "Date",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralToHospital",
+              "label": "To Hospital / ILHZ / RHU / Clinic of Origin:"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralFrom",
+              "label": "From:"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "referralReturnSlipDateAdmitted",
+              "label": "Date Admitted:",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "referralReturnSlipDateDischarged",
+              "label": "Date Discharged:",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipPatientName",
+              "label": "Name of Patient"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralReturnSlipPatientAge",
+              "label": "Age"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6b5ee9a1-4d71-45f6-bb74-6c489bda25df",
+                "answers": [
+                  {
+                    "concept": "e7d6eaaf-2c3d-431b-92d6-65c47d3cf748",
+                    "label": "Female to male transsexual"
+                  },
+                  {
+                    "concept": "236a96a3-6d88-4c5d-a963-a5634fcd8d12",
+                    "label": "Identifies as female gender"
+                  },
+                  {
+                    "concept": "7193a29c-7fd7-4d71-baaf-4758f8135bed",
+                    "label": "Identifies as male gender"
+                  },
+                  {
+                    "concept": "af8256a1-464a-4695-8556-14f87dab8781",
+                    "label": "Male to female transsexual"
+                  },
+                  {
+                    "concept": "90d14d59-e008-42c6-a671-074daf88ec7c",
+                    "label": "Identifies as non-binary gender"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              },
+              "id": "referralReturnSlipPatientGender",
+              "label": "Sex"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "1054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1058AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Divorced"
+                  },
+                  {
+                    "concept": "135704AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Lives alone"
+                  },
+                  {
+                    "concept": "1060AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Living with partner"
+                  },
+                  {
+                    "concept": "5555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Married"
+                  },
+                  {
+                    "concept": "1057AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Never married"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "1056AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Separated"
+                  },
+                  {
+                    "concept": "1059AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Widowed"
+                  }
+                ]
+              },
+              "id": "referralReturnSlipCivilStatus",
+              "label": "Civil Status"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipOccupation",
+              "label": "Occupation"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162929AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "162931AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Catholic"
+                  },
+                  {
+                    "concept": "163125AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Christianity (non-Catholic)"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "referralReturnSlipReligion",
+              "label": "Religion"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipAddress",
+              "label": "Address:"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralReturnSlipFinalDiagnosis",
+              "label": "Final Diagnosis"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralReturnSlipActionsTaken",
+              "label": "Actions Taken"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralReturnSlipRecommendation",
+              "label": "Recommendation"
+            }
+          ]
+        },
+        {
+          "label": "Signatures",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipPrintedNameOfAttendingPhysician",
+              "label": "Printed Name of Attending Physician"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipDesignation",
+              "label": "Designation"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipAttendingPhysicianContactInfo",
+              "label": "Attending Physician Contact Info"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSigOfAttendingPhysician",
+              "label": "Signature of Attending Physician (type name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "Referring HospitalDuplicate",
+              "value": "Referring Hospital: **SALCEDO DOCTORS HOSPITAL INC.**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralHospitalAddressDuplicate",
+              "label": "Address",
+              "value": "Address: **Salcedo, Eastern Samar**"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ACKNOWLEDGEMENT RECEIPT",
+      "sections": [
+        {
+          "label": "Patient Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralSlipPatientInfo",
+              "value": "**Patient Info**"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "referralReturnSlipDateTimeDuplicate",
+              "label": "Date",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReturnSlipPatientNameDuplicate",
+              "label": "Name of Patient"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "referralReturnSlipPatientAgeDuplicate",
+              "label": "Age"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6b5ee9a1-4d71-45f6-bb74-6c489bda25df",
+                "answers": [
+                  {
+                    "concept": "e7d6eaaf-2c3d-431b-92d6-65c47d3cf748",
+                    "label": "Female to male transsexual"
+                  },
+                  {
+                    "concept": "236a96a3-6d88-4c5d-a963-a5634fcd8d12",
+                    "label": "Identifies as female gender"
+                  },
+                  {
+                    "concept": "7193a29c-7fd7-4d71-baaf-4758f8135bed",
+                    "label": "Identifies as male gender"
+                  },
+                  {
+                    "concept": "af8256a1-464a-4695-8556-14f87dab8781",
+                    "label": "Male to female transsexual"
+                  },
+                  {
+                    "concept": "90d14d59-e008-42c6-a671-074daf88ec7c",
+                    "label": "Identifies as non-binary gender"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              },
+              "id": "referralReturnSlipPatientGenderDuplicate",
+              "label": "Sex"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "1054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1058AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Divorced"
+                  },
+                  {
+                    "concept": "135704AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Lives alone"
+                  },
+                  {
+                    "concept": "1060AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Living with partner"
+                  },
+                  {
+                    "concept": "5555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Married"
+                  },
+                  {
+                    "concept": "1057AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Never married"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "1056AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Separated"
+                  },
+                  {
+                    "concept": "1059AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Widowed"
+                  }
+                ]
+              },
+              "id": "referralReturnSlipCivilStatusDuplicate",
+              "label": "Civil Status"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "retest",
+              "label": "test"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralAckReceiptStatusConditionER",
+              "label": "Status / Condition upon Receipt at ER:"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralAckActionTaken",
+              "label": "Action Taken (Admitted, Referred to other facility Treated / Manage as OPD, etc.)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "928def39-33c1-4ddb-8430-165db28448c8"
+              },
+              "id": "referralAckAttachRecords",
+              "label": "Attachment Record: (X-Ray result / Plates, Laboratory results, Others)"
+            }
+          ]
+        },
+        {
+          "label": "Receiving Hospital",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "referralReceivingHospital",
+              "value": "**Receiving Hospital**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "ReferralReceivingHospital",
+              "label": "Receiving Hospital"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReceivingHospitalContactPerson",
+              "label": "Contact Person"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "referralReceivingHospitalContactInfo",
+              "label": "Contact Info"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Two way referral form"
+}

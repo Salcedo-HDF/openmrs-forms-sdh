@@ -1,0 +1,73 @@
+{
+  "name": "SOAP Note",
+  "description": "SOAP Note Form Template",
+  "version": "1.0",
+  "published": true,
+  "retired": false,
+  "encounter": "Visit Note",
+  "pages": [
+    {
+      "label": "SOAP Note",
+      "sections": [
+        {
+          "label": "SOAP",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Subjective Findings",
+              "type": "obs",
+              "required": false,
+              "id": "subjectiveFindings",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:167954",
+                "conceptMappings": [],
+                "answers": []
+              }
+            },
+            {
+              "label": "Objective Findings",
+              "type": "obs",
+              "required": false,
+              "id": "objectiveFindings",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:167955",
+                "conceptMappings": [],
+                "answers": []
+              }
+            },
+            {
+              "label": "Assessment",
+              "type": "obs",
+              "required": false,
+              "id": "assessment",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:170029",
+                "conceptMappings": [],
+                "answers": []
+              }
+            },
+            {
+              "label": "Plan",
+              "type": "obs",
+              "required": false,
+              "id": "plan",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:163104",
+                "conceptMappings": [],
+                "answers": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "8785c85e-e715-4839-a1a2-13a5cf9ace09",
+  "referencedForms": [],
+  "uuid": ""
+}

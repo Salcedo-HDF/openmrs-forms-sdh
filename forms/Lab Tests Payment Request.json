@@ -1,0 +1,316 @@
+{
+  "name": "Lab Tests Payment Request",
+  "pages": [
+    {
+      "label": "Lab Tests Payment Request",
+      "sections": [
+        {
+          "label": "Lab Tests",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "1271AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "300AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Blood typing"
+                  },
+                  {
+                    "concept": "1019AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Complete blood count"
+                  },
+                  {
+                    "concept": "21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Haemoglobin"
+                  },
+                  {
+                    "concept": "1015AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Hematocrit"
+                  },
+                  {
+                    "concept": "729AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Platelets"
+                  },
+                  {
+                    "concept": "1619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Rapid plasma reagin"
+                  },
+                  {
+                    "concept": "790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum creatinine (umol/L)"
+                  },
+                  {
+                    "concept": "653AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum glutamic-oxaloacetic transaminase"
+                  },
+                  {
+                    "concept": "654AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum glutamic-pyruvic transaminase"
+                  },
+                  {
+                    "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum glucose"
+                  },
+                  {
+                    "concept": "5473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum electrolytes"
+                  },
+                  {
+                    "concept": "45AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urine pregnancy test"
+                  },
+                  {
+                    "concept": "1875AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urine protein (dipstick)"
+                  },
+                  {
+                    "concept": "678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "White blood cells"
+                  },
+                  {
+                    "concept": "302AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urinalysis order"
+                  }
+                ]
+              },
+              "id": "labOrderLabTestsGroup1",
+              "label": "Lab Tests Group 1"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "cdf8b509-ed61-45e9-9a5f-78aec29c3c56",
+                "answers": [
+                  {
+                    "concept": "857AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Blood urea nitrogen"
+                  },
+                  {
+                    "concept": "164926AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dengue virus real time RT-PCR in serum or plasma"
+                  },
+                  {
+                    "concept": "160912AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Fasting blood glucose measurement (mg/dL)"
+                  },
+                  {
+                    "concept": "159644AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Glycosylated hemoglobin A measurement"
+                  },
+                  {
+                    "concept": "159430AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Hepatitis B Surface Antigen Test"
+                  },
+                  {
+                    "concept": "132494AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Occult blood in stools"
+                  },
+                  {
+                    "concept": "166040AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum or plasma total cholesterol measurement (mg/dL)"
+                  },
+                  {
+                    "concept": "304AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Stool exam"
+                  },
+                  {
+                    "concept": "1006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Total cholesterol (mmol/L)"
+                  },
+                  {
+                    "concept": "159825AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Uric acid, serum"
+                  }
+                ]
+              },
+              "id": "labOrdersLabTestsGroup2",
+              "label": "Lab Tests Group 2"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "77146e0a-f12e-4f8e-a7ef-0a96317936b8",
+                "answers": [
+                  {
+                    "concept": "161433AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Bleeding time (min)"
+                  },
+                  {
+                    "concept": "161435AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Clotting time (min)"
+                  },
+                  {
+                    "concept": "159644AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Glycosylated hemoglobin A measurement"
+                  },
+                  {
+                    "concept": "1010AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Lipid panel"
+                  },
+                  {
+                    "concept": "161483AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum chemistry panel"
+                  },
+                  {
+                    "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum potassium"
+                  },
+                  {
+                    "concept": "161531AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Syphilis IgG"
+                  },
+                  {
+                    "concept": "161506AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Thyroid panel"
+                  },
+                  {
+                    "concept": "8dd4eb66-dbe1-4f95-910f-92f5b36b50b0",
+                    "label": "Thyrotropin, serum/plasma (uIU/mL) (mIU/L)"
+                  },
+                  {
+                    "concept": "d92b1eb4-0357-4021-a57e-6795e38e7f14",
+                    "label": "Total thyroxine (T4), serum/plasma (nmol/L)"
+                  },
+                  {
+                    "concept": "eb225587-7072-4947-9d3e-0115142c07e3",
+                    "label": "Total triiodothyronine (T3), serum/plasma (nmol/L)"
+                  }
+                ]
+              },
+              "id": "labOrdersLabTestsGroup3",
+              "label": "Lab Tests Group 3"
+            }
+          ]
+        },
+        {
+          "label": "Payment Status",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "97fbad9d-29d4-478e-b27b-6251b4bbcc3d",
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1175AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not applicable"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              },
+              "id": "labOrdersPaidYesNo",
+              "label": "Paid?"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "labOrdersPaidDateTime",
+              "label": "Paid Date/Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "labOrders2WhoPaid",
+              "label": "Who Paid? (type full name)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "1530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "1528AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Child"
+                  },
+                  {
+                    "concept": "1529AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Grandchild"
+                  },
+                  {
+                    "concept": "973AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Grandparent"
+                  },
+                  {
+                    "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "None"
+                  },
+                  {
+                    "concept": "5620AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other family member"
+                  },
+                  {
+                    "concept": "1527AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Parent"
+                  },
+                  {
+                    "concept": "5617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Partner or spouse"
+                  },
+                  {
+                    "concept": "972AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Sibling"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              },
+              "id": "labOrdersPayorRelationshipToPatient",
+              "label": "Payor Relationship to Patient"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "labOrdersWhoReceivedThePayment",
+              "label": "Who Received the Payment? (type full name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "labOrdersTitleOfReceiver",
+              "label": "Title of Receiver"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "labOrdersSignatureOfReceiver",
+              "label": "Signature of Receiver (type full name)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "3596fafb-6f6f-4396-8c87-6e63a0f1bd71",
+  "referencedForms": [],
+  "uuid": "03ba95d5-18ac-4e87-8692-db5db1a712e2",
+  "description": "Manage the payment of lab tests",
+  "version": "1.0"
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Consent - Treatment",
+  "processor": "EncounterFormProcessor",
+  "encounterType": "47f354d3-3130-4ee4-88f9-a04bcdbe1224",
+  "referencedForms": [],
+  "uuid": "a909ad9a-c8e1-4919-a5cf-1d9fee6cecc8",
+  "description": "consent for treatment at SDH",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "Consent Form",
+      "sections": [
+        {
+          "label": "Consent Form",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "toggle",
+                "concept": "CIEL:1710",
+                "toggleOptions": {
+                  "labelTrue": "Signed",
+                  "labelFalse": "Not signed"
+                }
+              },
+              "id": "consentFormSigned",
+              "label": "Consent Form Signed?",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:1473",
+                "isSearchable": true
+              },
+              "id": "consentSignedBy",
+              "label": "Consent Signed By",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:1711"
+              },
+              "id": "consentDate",
+              "label": "Consent Date",
+              "datePickerFormat": "both",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "scannedForm",
+              "label": "Scanned form"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

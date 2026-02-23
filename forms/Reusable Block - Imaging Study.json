@@ -1,0 +1,165 @@
+{
+  "name": "Reusable Block - Imaging Study",
+  "pages": [
+    {
+      "label": "Ultrasound Study",
+      "sections": [
+        {
+          "label": "US Study Details",
+          "isExpanded": "false",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox-searchable",
+                "concept": "CIEL:1271",
+                "answers": [
+                  {
+                    "concept": "161283AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ultrasound of pelvis"
+                  },
+                  {
+                    "concept": "845AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ultrasound, abdomen"
+                  },
+                  {
+                    "concept": "159618AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Obstetric ultrasound"
+                  },
+                  {
+                    "concept": "161289AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ultrasound of left breast"
+                  },
+                  {
+                    "concept": "161290AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ultrasound of right breast"
+                  },
+                  {
+                    "concept": "65b41d2f-6c02-4cdc-8cee-967666723ee3",
+                    "label": "Ultrasound of thyroid"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "id": "typeOfUltrasound",
+              "label": "Type of ultrasound"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:160716"
+              },
+              "id": "typeOfUltrasoundOther",
+              "label": "Type of ultrasound - Other - Specify",
+              "hide": {
+                "hideWhenExpression": "!arrayContains(typeOfUltrasound, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:1392"
+              },
+              "id": "usFindings",
+              "label": "US Findings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "X-ray Study",
+      "sections": [
+        {
+          "label": "XR Study Details",
+          "isExpanded": "false",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox-searchable",
+                "concept": "CIEL:1271",
+                "answers": [
+                  {
+                    "concept": "309AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, other"
+                  },
+                  {
+                    "concept": "384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, foot"
+                  },
+                  {
+                    "concept": "382AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, hand"
+                  },
+                  {
+                    "concept": "392AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, pelvis"
+                  },
+                  {
+                    "concept": "380AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, leg"
+                  },
+                  {
+                    "concept": "377AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, arm"
+                  },
+                  {
+                    "concept": "390AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, spine"
+                  },
+                  {
+                    "concept": "3f9a0919-8d2c-4163-b2d3-55e0201a899e",
+                    "label": "X-ray of coccyx"
+                  },
+                  {
+                    "concept": "101AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, abdomen"
+                  },
+                  {
+                    "concept": "12AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "X-ray, chest"
+                  }
+                ]
+              },
+              "id": "typeOfXray",
+              "label": "Type of x-ray"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:160716"
+              },
+              "id": "typeOfXrayOther",
+              "label": "Type of x-ray - Other - Specify",
+              "hide": {
+                "hideWhenExpression": "!arrayContains(typeOfXray, '309AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:1392"
+              },
+              "id": "xrFindings",
+              "label": "XR Findings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0c5418f9-e4d1-4e1f-a0f5-775ff9d6396f",
+  "referencedForms": [],
+  "uuid": "4520b522-ae1e-43c1-8b55-8fd6a4207147",
+  "description": ".",
+  "version": "1.0"
+}

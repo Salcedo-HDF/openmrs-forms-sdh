@@ -1,0 +1,110 @@
+{
+  "name": "Medication Administration",
+  "pages": [
+    {
+      "label": "Medication Administration",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Encounter Details",
+            "page": "Encounter Details",
+            "section": "Encounter Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Medication Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:163101"
+              },
+              "id": "medicationName",
+              "label": "Medication Name"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "amount",
+              "label": "Amount"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "161563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "161554AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Gram"
+                  },
+                  {
+                    "concept": "161553AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Milligram"
+                  }
+                ]
+              },
+              "id": "amountUnits",
+              "label": "Unit"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:1519",
+                "answers": [
+                  {
+                    "concept": "160240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Oral"
+                  },
+                  {
+                    "concept": "160242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Intravenous"
+                  },
+                  {
+                    "concept": "160243AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Intramuscular"
+                  },
+                  {
+                    "concept": "162474AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Vaginal suppository"
+                  },
+                  {
+                    "concept": "162458AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Rectal suppository"
+                  },
+                  {
+                    "concept": "161253AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Intranasal"
+                  }
+                ]
+              },
+              "id": "route",
+              "label": "Route"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "d962653e-4a5f-4baa-9cba-5c68ff595ac4",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Encounter Details",
+      "alias": "Reusable Block - Encounter Details"
+    }
+  ],
+  "uuid": "6b978840-0a42-4498-8423-95f1040f2049",
+  "description": ".",
+  "version": "1.0"
+}

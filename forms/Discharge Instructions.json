@@ -1,0 +1,748 @@
+{
+  "name": "Discharge Instructions2",
+  "pages": [
+    {
+      "label": "Patient Info",
+      "sections": [
+        {
+          "label": "Patient Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "dischargeInstructionsDateTime",
+              "label": "Discharge Instructions Date Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "firstName",
+              "label": "First Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "lastName",
+              "label": "Last Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "hospitalNumber",
+              "label": "Hospital Number"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "medRecNumber",
+              "label": "Med Rec Number"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "age",
+              "label": "Age"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6b5ee9a1-4d71-45f6-bb74-6c489bda25df",
+                "answers": [
+                  {
+                    "concept": "236a96a3-6d88-4c5d-a963-a5634fcd8d12",
+                    "label": "Identifies as female gender"
+                  },
+                  {
+                    "concept": "7193a29c-7fd7-4d71-baaf-4758f8135bed",
+                    "label": "Identifies as male gender"
+                  },
+                  {
+                    "concept": "90d14d59-e008-42c6-a671-074daf88ec7c",
+                    "label": "Identifies as non-binary gender"
+                  },
+                  {
+                    "concept": "af8256a1-464a-4695-8556-14f87dab8781",
+                    "label": "Male to female transsexual"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "e7d6eaaf-2c3d-431b-92d6-65c47d3cf748",
+                    "label": "Female to male transsexual"
+                  }
+                ]
+              },
+              "id": "sex",
+              "label": "Sex"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "wardRoom",
+              "label": "Ward/Room"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Discharge Instructions 1",
+      "sections": [
+        {
+          "label": "Discharge Instructions 1",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeInstructions1",
+              "value": "**PATIENT DISCHARGE INSTRUCTIONS**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "discharge1ToPatientFamily",
+              "label": "Label",
+              "value": "**TO PATIENT/FAMILY**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeReadyForDischarge",
+              "value": "Your attending physician believes that you are now ready for discharge; we would like to give you the following instructions for you to remember, for your fast recovery. You and your family members are part of the health team in the promotion of wellness."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Discharge Medications Info",
+      "sections": [
+        {
+          "label": "Discharge Medication 1",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "discharge1Medications",
+              "label": "Medications"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "discharge1Dosages",
+              "label": "Dosages"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "discharge1Routes",
+              "label": "Routes"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "discharge1Datetime",
+              "label": "DateTime",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "discharge1precautions",
+              "label": "Precautions"
+            }
+          ]
+        },
+        {
+          "label": "Discharge Medication 2",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 3",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 4",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 5",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 6",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 6",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 7",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 8",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 9",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "Discharge Medication 10",
+          "isExpanded": "true",
+          "questions": []
+        }
+      ]
+    },
+    {
+      "label": "Discharge Instructions 2",
+      "sections": [
+        {
+          "label": "Exercise",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "discharge1Exercise",
+              "label": "discharge1Exercise",
+              "value": "**EXERCISE**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "performDailyExercise",
+              "label": "Perform daily exercise based on physician's instructions. Do deep breathing exercises.",
+              "value": "**1. Perform daily exercise based on physician's instructions**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "performOtherExercise",
+              "value": "**2. Do deep breathing exercises.**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "otherExerciseComments",
+              "label": "Other Exercise Comments"
+            }
+          ]
+        },
+        {
+          "label": "Treatment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatment",
+              "value": "**TREATMENT**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentSafeyMeasures",
+              "value": "**1. Safety Measures**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeAttachedGadget",
+              "value": "1a. Check for the proper placement/patency of any attached gadget (Ex: NGT/Foley Catheter). "
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentTurnSideToSide",
+              "label": "",
+              "value": "1b. Turn side to side every 2 hours to avoid skin irritation and respiratory complications. \n"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentDangleLegs",
+              "value": "1c. In getting up in bed, make sure to dangle legs first for a few minutes to avoid dizziness. "
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentWoundCare",
+              "value": "**2. Wound Care**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentDoHandWashing",
+              "value": "2a. Do hand washing. "
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentCleanliness",
+              "value": "2b. Observe cleanliness at all times. "
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentAntiseptic",
+              "value": "2c. Clean the wound daily with the prescribed antiseptic solution.\n"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeTreatmentSignsOfInfection",
+              "value": "2d. If there are any signs of infection like redness, discharges, foul odor, and pain, visit your attending physician or nearest hospital/clinic immediately.  "
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeHygiene",
+              "value": "**3. Hygiene**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "HygieneCleanliness",
+              "label": "",
+              "value": "3a. Maintain cleanliness at all times."
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeHygieneBath",
+              "label": "Other Hygiene",
+              "value": "3b. Take a bath daily, do mouth care, keep your finger/toe nails properly trim, clean perineal area daily."
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "hygieneFootwear",
+              "value": "3c. Wear clean and comfortable clothing and footwear."
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "discharge2OtherHygiene",
+              "label": "3d. Other Hygiene"
+            }
+          ]
+        },
+        {
+          "label": "Outpatient Follow-up",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeOutpatientFollowUp",
+              "value": "**Outpatient Follow-up**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "followupSeeYourDoctor",
+              "label": "",
+              "value": "See your doctor on the scheduled date/time at SDH-OPD\n"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "1stVisitDateTime",
+              "label": "1st Visit Date Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "2ndVisitDateTime",
+              "label": "2nd Visit Date Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentBringAbstract",
+              "label": "",
+              "value": "Always bring with you the discharge summary/clinical abstract on your next visit, to your physician. "
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentInCaseOfEmergency",
+              "value": "In case of emergency, don't hesitate to call your physician or visit a nearest hospital in your community. \n"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentBringLabResults",
+              "value": "Bring the recent laboratory results to your physician."
+            }
+          ]
+        },
+        {
+          "label": "Diet",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeDietLabel",
+              "label": "dischargeDietLabel",
+              "value": "**Diet**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "followYourPrescribedDiet",
+              "label": "Follow your prescribed diet"
+            }
+          ]
+        },
+        {
+          "label": "Sexuality/Social/Spiritual",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeSexualitySocialSpiritual",
+              "value": "**Sexuality/Social/Spiritual**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "sexSocialSpiritual",
+              "label": "",
+              "value": "May continue previous work as advised by the attending physician. \n"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentJoinOtherGroups",
+              "label": "Other",
+              "value": "May join support groups.\n"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentSexualActivity",
+              "value": "Resume sexual activity as advised by your physician."
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentHealthyHapbits",
+              "value": "Practice healthy habits like:"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentRestSleep",
+              "value": "a. Take enough rest/sleep\n"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentDrinkWater",
+              "value": "b. Drink plenty of water (if not contraindicated)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "treatmentAvoidSmokingAlcohol",
+              "value": "c. Avoid smoking / alcohol drinks"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "treatmentother",
+              "label": "d. Other"
+            }
+          ]
+        },
+        {
+          "label": "Other",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeOtherLabel",
+              "value": "**Other**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "receivedLabRadiologyResults",
+              "label": "",
+              "value": "Received the following photocopied laboratory results / Radiologic results"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1361AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "dischargePleaseSpecify",
+              "label": "Please specify"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Discharge Instructions 3 (Complete)",
+      "sections": [
+        {
+          "label": "Section 1",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "Patient Acknowledgement",
+              "value": "**Patient Acknowledgement**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "understoodComply",
+              "label": "I have fully understood the discharge instruction given to me and will comply with it for my fast recovery.",
+              "value": "I have fully understood the discharge instruction given to me and will comply with it for my fast recovery."
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "patientFamilySig",
+              "label": "Patient / Family Signature above printed name (type your name)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Final Discharge Info",
+      "sections": [
+        {
+          "label": "Final Discharge Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "dischargeFinalInfo",
+              "value": "**Final Discharge Info**"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "patientName",
+              "label": "Patient Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "hospitalCaseNum",
+              "label": "Hospital Case #"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "roomName",
+              "label": "Room"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "bedNumber",
+              "label": "Bed Number"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "attendingPhysician",
+              "label": "Attending Physician"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "diagnosis",
+              "label": "Diagnosis"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "nurseOnDuty",
+              "label": "Nurse on Duty"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "dischargeDateTime",
+              "label": "Discharge Date Time",
+              "datePickerFormat": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "181820aa-88c9-479b-9077-af92f5364329",
+  "referencedForms": [],
+  "uuid": "6d9ca728-0b6c-47e8-80fb-d142a26e17ca",
+  "description": "Discharge Instructions",
+  "version": "0.9"
+}

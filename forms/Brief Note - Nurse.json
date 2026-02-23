@@ -1,0 +1,57 @@
+{
+  "encounterType": "8785c85e-e715-4839-a1a2-13a5cf9ace09",
+  "name": "Brief Note - Nurse",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Encounter Details",
+      "alias": "Reusable Block - Encounter Details"
+    }
+  ],
+  "uuid": "c0d6392d-01c4-436b-b7f4-57db919de945",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "Notes",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Encounter Details",
+            "page": "Encounter Details",
+            "section": "Encounter Details",
+            "excludeQuestions": ["name2"]
+          }
+        },
+        {
+          "label": "Nurse's General Notes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "id": "nurseNotes",
+              "label": "Nurse notes",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:161011"
+              },
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "uploadFile",
+              "label": "Upload file"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "A general note for nurses to write"
+}

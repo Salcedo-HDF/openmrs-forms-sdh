@@ -1,0 +1,201 @@
+{
+  "name": "Patient Info and Demographics Form",
+  "pages": [
+    {
+      "label": "Patient Info Page",
+      "sections": [
+        {
+          "label": "Patient Info Section",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "patientIdentifier",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "8",
+                "maxLength": "10"
+              },
+              "id": "hospitalNumber",
+              "label": "Hospital Number"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "firstName",
+              "label": "First Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "middleName",
+              "label": "Middle Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "surname",
+              "label": "Surname"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "age",
+              "label": "Age"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "1",
+                "maxLength": "1"
+              },
+              "id": "sex",
+              "label": "Sex"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "20"
+              },
+              "id": "civilStatus",
+              "label": "Civil Status"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "10",
+                "maxLength": "20"
+              },
+              "id": "contactNumber",
+              "label": "Contact Number"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "address",
+              "label": "Address"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "id": "birthDate",
+              "label": "Birth Date",
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "30"
+              },
+              "id": "religion",
+              "label": "Religion"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "30"
+              },
+              "id": "occupation",
+              "label": "Occupation"
+            }
+          ]
+        },
+        {
+          "label": "Payment Section",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "paidDateTime",
+              "label": "Paid Date Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "paidBy",
+              "label": "Paid By"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "paidTo",
+              "label": "Paid To"
+            }
+          ]
+        },
+        {
+          "label": "Signature Section",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "signedDateTime",
+              "label": "Signed Date Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text",
+                "minLength": "2",
+                "maxLength": "50"
+              },
+              "id": "signedBy",
+              "label": "Signed By"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0e8230ce-bd1d-43f5-a863-cf44344fa4b0",
+  "referencedForms": [],
+  "uuid": "07aa1aeb-b9e3-4923-90b0-62c4157dbc67",
+  "description": "Patient Info",
+  "version": "0.9"
+}

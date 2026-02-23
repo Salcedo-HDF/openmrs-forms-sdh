@@ -1,0 +1,10 @@
+{
+  "name": "Clinic Procedure (generic)",
+  "pages": [],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0e8230ce-bd1d-43f5-a863-cf44344fa4b0",
+  "referencedForms": [],
+  "uuid": "15ca3708-fe98-4689-9e82-089564944724",
+  "description": ".",
+  "version": "0.9"
+}
