@@ -1,0 +1,147 @@
+{
+  "name": "Delivery Room Record",
+  "pages": [
+    {
+      "label": "Maternal History",
+      "sections": [
+        {
+          "label": "Identifier",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "162571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "nameOfPatient",
+              "label": "Name of Patient",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5325AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "hospitalNumber",
+              "label": "Hospital Number"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "989AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "age",
+              "label": "Age",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "164256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "attendingPhysician",
+              "label": "Attending Physician",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "164113AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "admittingDiagnosis",
+              "label": "Admitting Diagnosis",
+              "required": true
+            }
+          ]
+        },
+        {
+          "label": "Maternal History",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5624AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "gravidaPara",
+              "label": "Gravida Para",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160706AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "maternalBloodGroup",
+              "label": "Maternal Blood Group",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160706AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "paternalBloodGroup",
+              "label": "Paternal Blood Group"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "161009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "previousPostnatalAndFetalComplication",
+              "label": "Previous Postnatal and Fetal Complication",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "presentPrenatalAndFetalComplications",
+              "label": "Present Prenatal and Fetal Complications"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "3017f680-5c3c-4f7b-94e1-6afda9e07eaf"
+              },
+              "id": "anesthesia",
+              "label": "Anesthesia"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "166689AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "anesthesiologist",
+              "label": "Anesthesiologist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Child",
+      "sections": []
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "referencedForms": [],
+  "uuid": "df92e341-6cc9-47a7-b4e6-9f5b3948e451",
+  "description": "SDH Delivery Room Record",
+  "version": "0.9"
+}

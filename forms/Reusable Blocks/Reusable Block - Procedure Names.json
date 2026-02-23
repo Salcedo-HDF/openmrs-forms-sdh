@@ -1,0 +1,49 @@
+{
+  "name": "Reusable Block - Procedure Names",
+  "pages": [
+    {
+      "label": "Procedure Names - Gyn",
+      "sections": [
+        {
+          "label": "Procedure Names - Gyn",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "CIEL:1651",
+                "answers": [
+                  {
+                    "concept": "161830AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Total abdominal hysterectomy"
+                  },
+                  {
+                    "concept": "166965AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Total vaginal hysterectomy"
+                  },
+                  {
+                    "concept": "162807AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Left salpingectomy"
+                  },
+                  {
+                    "concept": "162806AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Right salpingectomy"
+                  }
+                ]
+              },
+              "id": "gynProcedure",
+              "label": "Gyn Procedure"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0c5418f9-e4d1-4e1f-a0f5-775ff9d6396f",
+  "referencedForms": [],
+  "uuid": "253ac1d8-90aa-461f-86da-61cd906641c0",
+  "description": ".",
+  "version": "0.9"
+}

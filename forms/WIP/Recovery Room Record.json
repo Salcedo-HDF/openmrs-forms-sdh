@@ -1,0 +1,612 @@
+{
+  "name": "Recovery Room Record",
+  "pages": [
+    {
+      "label": "Patient Info",
+      "sections": [
+        {
+          "label": "Patient Info",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "patientIdentifier",
+              "questionOptions": {
+                "rendering": "text",
+                "identifierType": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+              },
+              "id": "hospitalNumber",
+              "label": "Patient Hospital Number"
+            },
+            {
+              "type": "patientIdentifier",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166103",
+                "identifierType": "b4143563-16cd-4439-b288-f83d61670fc8"
+              },
+              "id": "patientSurname",
+              "label": "Patient Surname"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "patientFirstname",
+              "label": "Patient Firstname"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:989"
+              },
+              "id": "patientAge",
+              "label": "Patient Age"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "CIEL:167864"
+              },
+              "id": "patientGender",
+              "label": "Patient Gender"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Recovery Room Info",
+      "sections": [
+        {
+          "label": "Recovery Room",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "arrivalDatetime",
+              "label": "Arrival DateTime",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "dischargeDatetime",
+              "label": "Discharge DateTime",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "wardRoom",
+              "label": "Ward/Room"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "anesthesiologistFullName",
+              "label": "Anesthesiologist Full Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recoveryScore",
+              "label": "Recovery Score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Observations",
+      "sections": [
+        {
+          "label": "1st Observation",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "obs1Datetime",
+              "label": "DateTime",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs1SystolicBloodPressure",
+              "label": "Systolic Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs1DiastolicBloodPressure",
+              "label": "Diastolic Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs1Pulse",
+              "label": "Pulse"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs1RespiratoryRate",
+              "label": "Respiratory Rate"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs1Temperature",
+              "label": "Temperature (C)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs1ArterialBloodOxygenSaturation",
+              "label": "Arterial Blood Oxygen Saturation (o2 SAT pulse oximeter)"
+            }
+          ]
+        },
+        {
+          "label": "2nd Observation",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "obs2Datetime",
+              "label": "DateTime",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs2SystolicBloodPressure",
+              "label": "Systolic Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs2DiastolicBloodPressure",
+              "label": "Diastolic Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs2Pulse",
+              "label": "Pulse"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs2RespiratoryRate",
+              "label": "Respiratory Rate"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs2Temperature",
+              "label": "Temperature (C)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "obs2ArterialBloodOxygenSaturation",
+              "label": "Arterial Blood Oxygen Saturation (o2 SAT pulse oximeter)"
+            }
+          ]
+        },
+        {
+          "label": "3rd Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "4th Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "5th Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "6th Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "7th Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "8th Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "9th Observation",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "10th Observation",
+          "isExpanded": "true",
+          "questions": []
+        }
+      ]
+    },
+    {
+      "label": "Recovery Score",
+      "sections": [
+        {
+          "label": "1st Recovery Score",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5085"
+              },
+              "id": "recovery1SystolicPressure1",
+              "label": "Systolic Pressure (+-)30 of pre-op but>90mmHg 1"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5085"
+              },
+              "id": "recovery1SystolicPressure2",
+              "label": "Systolic Pressure (+-)30 of pre-op but>90mmHg 2"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5085"
+              },
+              "id": "recovery1SystolicPressure3",
+              "label": "Systolic Pressure (+-)30 of pre-op but>90mmHg 3"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1PinkAndWarm",
+              "label": "Pink and Warm"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1VerbalResponseToSpokenCommand1",
+              "label": "Verbal response to Spoken Command 1"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1VerbalResponseToSpokenCommand2",
+              "label": "Verbal response to Spoken  Command 2"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1HeadLiftWithClosedMouthForFive1",
+              "label": "Head Lift with closed mouth for five 1"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1HeadLiftWithClosedMouthForFive2",
+              "label": "Head Lift with closed mouth for five 2"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1ComfortableRegardsToPain1",
+              "label": "Comfortable regards to Pain 1"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1ComfortableRegardsToPain2",
+              "label": "Comfortable regards to Pain 2"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1TotalScore",
+              "label": "Total Score"
+            }
+          ]
+        },
+        {
+          "label": "2nd Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "3rd Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "4th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "5th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "6th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "7th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "8th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "9th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "10th Recovery Score",
+          "isExpanded": "true",
+          "questions": []
+        }
+      ]
+    },
+    {
+      "label": "Drugs Given",
+      "sections": [
+        {
+          "label": "1st Time Drugs Given",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "recovery1drugGivenDateTime",
+              "label": "Drug Given Date Time",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1DrugsGiven",
+              "label": "Drugs Given"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1DosageGiven",
+              "label": "Dosage Given"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1RouteGiven",
+              "label": "Route Given"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "recovery1InitialsOfGiver",
+              "label": "Initials of Giver"
+            }
+          ]
+        },
+        {
+          "label": "2nd Time Drugs Given",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "3rd Time Drugs Given",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "4th Time Drugs Given",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "5th Time Drugs Given",
+          "isExpanded": "true",
+          "questions": []
+        },
+        {
+          "label": "6th Time Drugs Given",
+          "isExpanded": "true",
+          "questions": []
+        }
+      ]
+    },
+    {
+      "label": "Recovery Room Discharge Info",
+      "sections": [
+        {
+          "label": "Urine Output",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "datetime"
+              },
+              "id": "urineOutputDatetime",
+              "label": "Urine Output DateTime",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "159994AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "recovery1urineOR",
+              "label": "Urine (output OR)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "159994AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "recovery1urineOutputPacu",
+              "label": "Urine (Output PACU)"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "159994AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "recovery1UrineOutputTotal",
+              "label": "Urine Output Total"
+            }
+          ]
+        },
+        {
+          "label": "Discharge Signatures",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargedRnFullName",
+              "label": "Discharged RN Full Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargedRnSignature",
+              "label": "Discharged RN Signature (type your name)"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "dischargedAnesthesiologistFullName",
+              "label": "Discharged  Anesthesiologist Full Name"
+            },
+            {
+              "type": "control",
+              "questionOptions": {
+                "rendering": "text"
+              },
+              "id": "DischargedAnesthesiologistSignature",
+              "label": " Discharged Anesthesiologist Signature (type your name)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "referencedForms": [],
+  "uuid": "b1472ea3-b61b-4688-b8d0-c97cfe6c4216",
+  "description": "In-Logistics, observations, recovery score, drugs given, Out-logistics",
+  "version": "0.9"
+}

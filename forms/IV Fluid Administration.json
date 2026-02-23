@@ -1,0 +1,82 @@
+{
+  "name": "IV Fluid Administration",
+  "pages": [
+    {
+      "label": "IV Fluid Administration",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Encounter Details",
+            "page": "Encounter Details",
+            "section": "Encounter Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Fluid Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:161911",
+                "answers": [
+                  {
+                    "concept": "78617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ringer's lactate"
+                  },
+                  {
+                    "concept": "162856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Potassium chloride 40 mmol/sodium chloride 0.9% infusion solution"
+                  },
+                  {
+                    "concept": "162855AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Potassium chloride 20 mmol/L in normal saline"
+                  },
+                  {
+                    "concept": "80804AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal saline"
+                  },
+                  {
+                    "concept": "161922AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dextrose 10% in water"
+                  },
+                  {
+                    "concept": "162857AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dextrose 5% in normal saline"
+                  }
+                ]
+              },
+              "id": "solutionType",
+              "label": "Type of solution"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "165987AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "volumeAdministered",
+              "label": "Volume administered"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "d962653e-4a5f-4baa-9cba-5c68ff595ac4",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Encounter Details",
+      "alias": "Reusable Block - Encounter Details"
+    }
+  ],
+  "uuid": "11fed69b-c3a7-48a1-a461-82435561e361",
+  "description": ".",
+  "version": "1.0"
+}

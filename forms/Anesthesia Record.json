@@ -1,0 +1,53 @@
+{
+  "name": "Anesthesia Record",
+  "processor": "EncounterFormProcessor",
+  "encounterType": "3e0bac7a-4710-40c6-b9c5-727d193c7303",
+  "referencedForms": [],
+  "uuid": "ac9f06f5-4da3-4ae2-9443-76c5d66d1424",
+  "description": "scanned in anesthesia record",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "Anesthesia Record",
+      "sections": [
+        {
+          "label": "Anesthesia Record",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:1473",
+                "isSearchable": true
+              },
+              "id": "anesthesiaRecordCompletedBy",
+              "label": "Anesthesia Record Completed By",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:160753"
+              },
+              "id": "anesthesiaDate",
+              "label": "Anesthesia Date",
+              "datePickerFormat": "calendar",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "scannedForm",
+              "label": "Scanned form"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

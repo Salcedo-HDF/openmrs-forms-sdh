@@ -1,0 +1,96 @@
+{
+  "name": "Reusable Block - Encounter Details",
+  "pages": [
+    {
+      "label": "Encounter Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "CIEL:160753",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "date",
+              "label": "Date",
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:163509",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "time",
+              "label": "Time",
+              "datePickerFormat": "timer"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:1473"
+              },
+              "id": "nameOfProvider",
+              "label": "Name of provider"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:164918",
+                "answers": [
+                  {
+                    "concept": "160473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Emergency department"
+                  },
+                  {
+                    "concept": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Outpatient department"
+                  },
+                  {
+                    "concept": "160463AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Radiology department"
+                  },
+                  {
+                    "concept": "a04b4cac-7152-4672-a9a2-0b04a3dcd4be",
+                    "label": "Hospital ward"
+                  },
+                  {
+                    "concept": "164835AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Labor and delivery unit"
+                  },
+                  {
+                    "concept": "164834AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Operating room"
+                  },
+                  {
+                    "concept": "162680AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Recovery ward"
+                  }
+                ]
+              },
+              "id": "location",
+              "label": "Location"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0c5418f9-e4d1-4e1f-a0f5-775ff9d6396f",
+  "referencedForms": [],
+  "uuid": "4db3e525-7901-45c0-8300-a7a3eeca7c93",
+  "description": ".",
+  "version": "1.0"
+}

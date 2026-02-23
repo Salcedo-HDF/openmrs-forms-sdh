@@ -1,0 +1,67 @@
+{
+  "encounterType": "47f354d3-3130-4ee4-88f9-a04bcdbe1224",
+  "name": "Consent - Surgery",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "uuid": "7582f91a-567a-4c3f-ad5a-b586291d4a69",
+  "version": "1.1",
+  "pages": [
+    {
+      "label": "Consent Form",
+      "sections": [
+        {
+          "label": "Consent Form",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "toggle",
+                "concept": "CIEL:1710",
+                "toggleOptions": {
+                  "labelTrue": "Signed",
+                  "labelFalse": "Not signed"
+                }
+              },
+              "id": "consentFormSigned",
+              "label": "Consent Form Signed?",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:1473",
+                "isSearchable": true
+              },
+              "id": "consentSignedBy",
+              "label": "Consent Signed By",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:1711"
+              },
+              "id": "consentDate",
+              "label": "Consent Date",
+              "datePickerFormat": "both",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "scannedForm",
+              "label": "Scanned form"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Surgical consent form"
+}

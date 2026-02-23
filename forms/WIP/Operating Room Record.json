@@ -1,0 +1,225 @@
+{
+  "name": "Operating Room Record",
+  "pages": [
+    {
+      "label": "Operating Room Report",
+      "sections": [
+        {
+          "label": "Staff",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166688"
+              },
+              "id": "surgeons",
+              "label": "Surgeons",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166690"
+              },
+              "id": "scrubNurse",
+              "label": "Scrub Nurse",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166691"
+              },
+              "id": "circulatingNurse",
+              "label": "Circulating Nurse",
+              "required": false
+            }
+          ]
+        },
+        {
+          "label": "Pre-op Diagnosis - Gyn",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Diagnoses - Gyn",
+            "page": "Pre-op Diagnosis - Gyn",
+            "section": "Pre-op Diagnosis - Gyn",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Post-op Diagnosis - Gyn",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Diagnoses - Gyn",
+            "page": "Post-op Diagnosis - Gyn",
+            "section": "Post-op Diagnosis - Gyn",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Timeline",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "CIEL:160753",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "dateSurgery",
+              "label": "Date",
+              "required": false,
+              "datePickerFormat": "calendar"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:163509",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "timeInRoom",
+              "label": "In-Room Time",
+              "required": true,
+              "datePickerFormat": "timer"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:163509",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "timeAnesthesiaStart",
+              "label": "Anesthesia Start Time",
+              "required": true,
+              "datePickerFormat": "timer"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:163509",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "timeIncision",
+              "label": "Incision Time",
+              "required": true,
+              "datePickerFormat": "timer"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:163509",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "timeSurgeryCompleted",
+              "label": "Surgery Completed Time",
+              "required": true,
+              "datePickerFormat": "timer"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "CIEL:163509",
+                "calculate": {
+                  "calculateExpression": "today()"
+                }
+              },
+              "id": "timeOutOfOr",
+              "label": "Out of OR Time",
+              "required": true,
+              "datePickerFormat": "timer"
+            }
+          ]
+        },
+        {
+          "label": "Procedure Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:166635"
+              },
+              "id": "proceduresPerformed",
+              "label": "Procedure(s) Performed",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:162086"
+              },
+              "id": "specimensRemoved",
+              "label": "Specimens Removed",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "CIEL:161933",
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              },
+              "id": "submittedForPathology",
+              "label": "Submitted for pathology",
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:159395"
+              },
+              "id": "patientConditionOnDischargeFromOr",
+              "label": "Patient's condition on discharge from OR",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "3e0bac7a-4710-40c6-b9c5-727d193c7303",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Diagnoses - Gyn",
+      "alias": "Reusable Block - Diagnoses - Gyn"
+    }
+  ],
+  "uuid": "fc554925-9421-4e30-9543-3b1cbdaf11e9",
+  "description": "A short form for critical OR data",
+  "version": "1.0"
+}

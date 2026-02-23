@@ -1,0 +1,57 @@
+{
+  "encounterType": "8785c85e-e715-4839-a1a2-13a5cf9ace09",
+  "name": "Brief Note - Doctor",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [
+    {
+      "formName": "Reusable Block - Encounter Details",
+      "alias": "Reusable Block - Encounter Details"
+    }
+  ],
+  "uuid": "e1075fcc-1c3f-480b-a298-1a4696d86611",
+  "version": "1.0",
+  "pages": [
+    {
+      "label": "Notes",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [],
+          "reference": {
+            "form": "Reusable Block - Encounter Details",
+            "page": "Encounter Details",
+            "section": "Encounter Details",
+            "excludeQuestions": []
+          }
+        },
+        {
+          "label": "Doctor's General Notes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "id": "doctorNotes",
+              "label": "Doctor Notes",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "CIEL:161011"
+              },
+              "required": false
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "CIEL:159802"
+              },
+              "id": "uploadFile",
+              "label": "Upload file"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "A general note for doctors to write"
+}

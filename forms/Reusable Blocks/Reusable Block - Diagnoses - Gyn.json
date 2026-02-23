@@ -1,0 +1,233 @@
+{
+  "encounterType": "0c5418f9-e4d1-4e1f-a0f5-775ff9d6396f",
+  "name": "Reusable Block - Diagnoses - Gyn",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "uuid": "2e241552-9893-4519-a22e-54598e887b46",
+  "version": "0.9",
+  "pages": [
+    {
+      "label": "Pre-op Diagnosis - Gyn",
+      "sections": [
+        {
+          "label": "Pre-op Diagnosis - Gyn",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "id": "preopDiagnosisGyn",
+              "label": "Pre-op Diagnosis - Gyn",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox-searchable",
+                "concept": "CIEL:163034",
+                "answers": [
+                  {
+                    "concept": "118784AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cervical dysplasia"
+                  },
+                  {
+                    "concept": "147232AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Vaginal bleeding"
+                  },
+                  {
+                    "concept": "141631AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dysfunctional uterine bleeding"
+                  },
+                  {
+                    "concept": "129537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polyp of corpus uteri"
+                  },
+                  {
+                    "concept": "129540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polyp of cervix"
+                  },
+                  {
+                    "concept": "123455AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Uterine leiomyoma"
+                  },
+                  {
+                    "concept": "158232AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pain in female pelvis"
+                  },
+                  {
+                    "concept": "46AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ectopic pregnancy without intrauterine pregnancy"
+                  },
+                  {
+                    "concept": "119702AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ovarian cyst"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:161602"
+              },
+              "id": "preopDiagnosisOther",
+              "label": "Pre-op Diagnosis - Other - Specify",
+              "hide": {
+                "hideWhenExpression": "!arrayContains(preopDiagnosisGyn, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Post-op Diagnosis - Gyn",
+      "sections": [
+        {
+          "label": "Post-op Diagnosis - Gyn",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "id": "postopDiagnosisGyn",
+              "label": "Post-op Diagnosis - Gyn",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox-searchable",
+                "concept": "CIEL:163035",
+                "answers": [
+                  {
+                    "concept": "118784AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cervical dysplasia"
+                  },
+                  {
+                    "concept": "147232AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Vaginal bleeding"
+                  },
+                  {
+                    "concept": "141631AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dysfunctional uterine bleeding"
+                  },
+                  {
+                    "concept": "129537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polyp of corpus uteri"
+                  },
+                  {
+                    "concept": "129540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polyp of cervix"
+                  },
+                  {
+                    "concept": "123455AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Uterine leiomyoma"
+                  },
+                  {
+                    "concept": "158232AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pain in female pelvis"
+                  },
+                  {
+                    "concept": "46AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ectopic pregnancy without intrauterine pregnancy"
+                  },
+                  {
+                    "concept": "119702AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ovarian cyst"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:5622"
+              },
+              "id": "postopDiagnosisOther",
+              "label": "Post-op Diagnosis - Other - Specify",
+              "hide": {
+                "hideWhenExpression": "!arrayContains(postopDiagnosisGyn, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Chief Complaint - Gyn",
+      "sections": [
+        {
+          "label": "Chief Complaint - Gyn",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "id": "chiefComplaintGyn",
+              "label": "Chief Complaint - Gyn",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox-searchable",
+                "concept": "CIEL:5219",
+                "answers": [
+                  {
+                    "concept": "118784AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cervical dysplasia"
+                  },
+                  {
+                    "concept": "147232AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Vaginal bleeding"
+                  },
+                  {
+                    "concept": "141631AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dysfunctional uterine bleeding"
+                  },
+                  {
+                    "concept": "129537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polyp of corpus uteri"
+                  },
+                  {
+                    "concept": "129540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polyp of cervix"
+                  },
+                  {
+                    "concept": "123455AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Uterine leiomyoma"
+                  },
+                  {
+                    "concept": "158232AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pain in female pelvis"
+                  },
+                  {
+                    "concept": "46AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ectopic pregnancy without intrauterine pregnancy"
+                  },
+                  {
+                    "concept": "119702AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Ovarian cyst"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:5622"
+              },
+              "id": "chiefComplaintOther",
+              "label": "Chief Complaint - Other - Specify",
+              "hide": {
+                "hideWhenExpression": "!arrayContains(chiefComplaintGyn, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "."
+}

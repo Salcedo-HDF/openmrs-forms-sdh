@@ -1,0 +1,135 @@
+{
+  "name": "Discharge Summary",
+  "pages": [
+    {
+      "label": "Discharge Summary",
+      "sections": [
+        {
+          "label": "Discharge Summary",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1640AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "dateOfAdmission",
+              "label": "Date of Admission",
+              "required": true,
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1641AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "dateOfDischarge",
+              "label": "Date of Discharge",
+              "required": true,
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "164256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "minLength": "1",
+                "maxLength": "100"
+              },
+              "id": "attendingPhysician",
+              "label": "Attending Physician",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "159372AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "pcp",
+              "label": "PCP"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160531AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "chiefComplaints",
+              "label": "Chief Complaints",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1390AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "historyOfPresentIllnessWithPhysicalExam",
+              "label": "History of Present Illness with Physical Exam",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1390AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "courseInTheWard",
+              "label": "Course in the Ward",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "1361AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "laboratoryResults",
+              "label": "Laboratory Results",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "161189AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "medications",
+              "label": "Medications",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "160250AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "finalDiagnosis",
+              "label": "Final Diagnosis",
+              "required": true
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "2ad20b043cf54dd48e698e1c8e231c99"
+              },
+              "id": "medicalAdvice",
+              "label": "Medical Advice",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "181820aa-88c9-479b-9077-af92f5364329",
+  "referencedForms": [],
+  "uuid": "6cea07cc-87d5-4c66-8d3b-313341117b4b",
+  "description": "Discharge Summary",
+  "version": "0.9"
+}
